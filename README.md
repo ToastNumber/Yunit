@@ -20,5 +20,5 @@ assertEquals(1, area(10_000, CENTI).to(METRE))
 assertEquals(40_000, measure(2, METRE).square().to(CENTI))
                  
 // "Lift" 1m to 1m^3 then get this volume in cm^3
-assertEquals(1_000_000, METRE.lift(3).to(CENTI))                           
+assertEquals(1_000_000, METRE.lift(3).to(CENTI))
 ```
