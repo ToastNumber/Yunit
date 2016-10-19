@@ -152,7 +152,7 @@ public class YunitTest {
     public void integration() {
         assertEquals(1000, METRE.to(MILLI), DELTA);
         assertEquals(2, measure(20, MILLI).to(CENTI), DELTA);
-        assertEquals(5, measure(3, METRE).map(i -> i + 2).to(METRE), DELTA);
+        assertEquals(5, measure(3, METRE).map(i -> i + 2).value(), DELTA);
         assertEquals(6, measure(300, CENTI).multiply(measure(2, METRE)).to(METRE), DELTA);
         assertEquals(1, area(10_000, CENTI).to(METRE), DELTA);
         assertEquals(40_000, measure(2, METRE).square().to(CENTI), DELTA);
