@@ -1,5 +1,7 @@
 # Yunit #
 
+Yunit is a DSL for working with common measurements and different units.
+
 ```java
 // Convert 1 metre to millimetres
 assertEquals(1000, METRE.to(MILLI))
